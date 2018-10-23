@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+</head>
+<body>
+	<div class="owl-carousel owl-theme owl-loaded">
+    <div class="owl-stage-outer">
+        <div class="owl-stage">
+            <div class="owl-item">...</div>
+            <div class="owl-item">...</div>
+            <div class="owl-item">...</div>
+            <div class="owl-item">...</div>
+            <div class="owl-item">...</div>
+            <div class="owl-item">...</div>
+            <div class="owl-item">...</div>
+            <div class="owl-item">...</div>
+            <div class="owl-item">...</div>
+            <div class="owl-item">...</div>
+            <div class="owl-item">...</div>
+            <div class="owl-item">...</div>
+            <div class="owl-item">...</div>
+            <div class="owl-item">...</div>
+            <div class="owl-item">...</div>
+        </div>
+    </div>
+    
+</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 5,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+        </script>
+</body>
+</html>

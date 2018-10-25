@@ -1,0 +1,220 @@
+@import "color";
+$color-boder:#ebebeb;
+.bread-crumb{
+  border-bottom: 1px solid #44444440;
+  background-color: $color-white;
+  margin-bottom: 40px;
+  .breadcrumb{
+
+      margin-bottom: 0;
+
+    background-color: $color-white;
+    .breadcrumb-item{
+      a {
+        color: $color-gray;
+      }
+    }
+    .active{
+      color: $bg-main;
+    }
+    .breadcrumb-home{
+      text-decoration: none;
+      font-family: rome;
+    }
+  }
+
+}
+.aside__filter{
+  &__title{
+    font-size: 14px;
+    font-family: rome;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  #formsearch-category{
+    #searchbox-category{
+      padding:0 5px ;
+      box-shadow: none;
+      height: 35px;
+
+      border: 1px solid #44444440;
+      width: calc(100% - 40px);
+    }
+    #submit-category{
+      width: 35px;
+      height: 35px;
+      margin-top: -2px;
+      margin-left: -5px;
+      background-color: $bg-main;
+      border-radius: 0 3px 3px 0;
+      &:hover{
+        outline: none;
+      }
+    }
+    .checklist-item{
+      position: relative;
+      .checkbox{
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+    }
+  }
+  &__checklist{
+    padding: 10px 0;
+    list-style-type: none;
+    .checklist-item{
+      background-color: $color-white;
+      cursor: pointer;
+      &:visited{
+        background-color: white;
+      }
+      position: relative;
+      padding: 0 22px;
+      display: block;
+      .checkbox{
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        &:checked ~.checkmark{
+          background-color: $bg-main;
+        }
+        &:checked ~.checkmark:after{
+          display: block;
+        }
+      }
+
+      .checkmark{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 15px;
+        margin-top: 2px;
+        height: 15px;
+        border: 1px solid #44444440;
+        border-radius: 2px;
+        &:after{
+          display: none;
+          content: "";
+          position: absolute;
+          left: 4px;
+          top: 0;
+          width: 5px;
+          height: 10px;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+        }
+      }
+      .checktitle{
+        user-select: none;
+      }
+    }
+  }
+  &__price{
+    margin: 20px 0 30px 0;
+    >input{
+      display: inline-block;
+      width: 40%;
+      text-align: center;
+      background-color: #44444452;
+      border: 1px solid transparent;
+      border-radius: 2px;
+    }
+    &-button{
+      margin-top: 10px;
+      background-color: $bg-main;
+      border: none;
+      border-radius: 2px;
+      color: $color-white;
+      display: block;
+      width: 40%;
+      padding: 3px 0;
+      cursor: pointer;
+      &:focus{
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+}
+.ui-slider-horizontal {
+  height: 2px;
+  background-color: #ebebeb;
+}
+.ui-slider-range.ui-corner-all.ui-widget-header {
+  background: #444 !important;
+  height: 2px;
+}
+.ui-slider-horizontal .ui-slider-handle {
+  top:-7px;
+  background-color: #444444!important;
+  margin-left: -.6em;
+  border-radius: 50%;
+  outline: none;
+}
+.product-colection{
+  &__title{
+   h2{
+     margin-left: 20px;
+     font-size: 15px;
+     font-family: rome;
+     text-transform: uppercase;
+     margin-bottom: 30px;
+   }
+  }
+  &__sortby{
+    z-index: 100;
+    &__list{
+      cursor: pointer;
+      position: relative;
+      text-align: left;
+      background-color: $color-white;
+      display: inline-block;
+      list-style-type: none;
+      padding-left: 0;
+      border-radius: 2px;
+      &:hover{
+        border: 1px solid #444;
+        .sortby__list-lv2{
+          display: inline-block;
+        }
+      }
+      border: 1px solid $color-boder;
+      >li{
+        i{
+          float:right;
+          line-height: 37px;
+        }
+        line-height: 34px;
+        width: 180px;
+          padding: 0 20px;
+        .sortby__list-lv2{
+          display: none;
+          border-radius: 2px;
+          position: absolute;
+          >li{
+            a{
+              color: $color-gray;
+            }
+            padding: 0 20px;
+            border-bottom: 1px solid $color-boder;
+          }
+          width: 100%;
+          top: calc(100% + 1px);
+          left: 0;
+          text-align: left;
+          border: 1px solid $color-boder ;
+          padding-left: 0;
+          background-color: $color-white;
+          list-style-type: none;
+          position: absolute;
+        }
+      }
+    }
+  }
+}

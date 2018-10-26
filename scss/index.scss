@@ -390,7 +390,11 @@
                      .product-price {
                        margin: 0;
                        .new-price {
+                         width: 50%;
                          font-size: 12px;
+                       }
+                       .old-price{
+                         width: 50%;
                        }
                      }
                      .product-select {
@@ -1121,7 +1125,7 @@
                      bottom: 7px;
                      background-color: white;
                      left: 0;
-                     transition: all 200ms ease-in-out;
+                     transition: all 300ms ease-in-out;
                      &-buy {
                          color: white;
                          height: 34px;
@@ -1129,7 +1133,7 @@
                          border-radius: 3px;
                          text-align: center;
                          background-color: $bg-main;
-                         padding: 0px 20px;
+                         padding: 0px 23px;
                          text-transform: capitalize;
 
                          i {

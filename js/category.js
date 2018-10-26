@@ -1,16 +1,17 @@
 $(function () {
+
     $( "#slider-range" ).slider({
         range: true,
         min: 0,
-        max: 10000000,
-        values: [ 0, 10000000 ],
+        max: 18500000,
+        values: [ 0, 18500000 ],
         slide: function( event, ui ) {
-            $( "#min-value-filter" ).val(+ ui.values[ 0 ]+"đ");
-            $("#max-value-filter").val(ui.values[ 1 ]+"đ");
+            $( "#min-value-filter" ).val(+ ui.values[0]).simpleMoneyFormat(true);
+            $("#max-value-filter").val(ui.values[1]).simpleMoneyFormat(true);
         }
     });
-    $( "#min-value-filter" ).val($( "#slider-range" ).slider( "values", 0 ) );
-    $("#max-value-filter").val($( "#slider-range" ).slider( "values", 1 )+"đ" );
+    $( "#min-value-filter" ).val($( "#slider-range" ).slider( "values", 0)).simpleMoneyFormat(true);
+    $("#max-value-filter").val($( "#slider-range" ).slider( "values", 1 )).simpleMoneyFormat(true);
 
     $(".sortby__list-lv2__item").click(function (ite) {
         let text=$(ite.currentTarget).find("a").text();

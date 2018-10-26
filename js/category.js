@@ -15,10 +15,10 @@ $(function () {
     $(".sortby__list-lv2__item").click(function (ite) {
         let text=$(ite.currentTarget).find("a").text();
         switch (text) {
-            case (text="A - Z") :
+            case "A - Z" :
                 document.getElementsByClassName("val")[0].innerHTML = "Tên A - Z";
                 break;
-            case (text="Z - A") :
+            case "Z - A" :
                 document.getElementsByClassName("val")[0].innerHTML = "Tên Z - A";
                 break;
             default:

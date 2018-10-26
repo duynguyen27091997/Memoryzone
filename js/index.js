@@ -265,5 +265,4 @@ $(document).on("click",".product-select__minus",function(e){
         };
     }(jQuery));
     $(".price").simpleMoneyFormat();
-    $(".money").simpleMoneyFormat();
 });

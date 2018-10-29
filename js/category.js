@@ -55,7 +55,7 @@ $(function () {
     }
     let status  = 0;
     $(window).on("resize",function () {
-        if (window.innerWidth <=991 && status === 0) {
+        if (window.innerWidth <=991) {
             $(".product-filter__open").css("display", "inline-block");
             $(".product-filter").css({right:-245+'px'});
 
@@ -74,8 +74,6 @@ $(function () {
             $(".product-filter__close").css("display", "inline-block");
             status = 1;
             return false;
-        }else{
-            status = 0;
         }
     });
     $(document).on("click", ".product-filter__close", function () {
@@ -87,8 +85,6 @@ $(function () {
             $(".product-filter__open").css("display", "inline-block");
             status = 0;
             return false;
-        }else{
-            status = 1;
         }
     });
 });

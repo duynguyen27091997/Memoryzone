@@ -1,0 +1,196 @@
+@import "color";
+footer{
+  .footer-top{
+    padding: 20px;
+    background-color: #ebebeb;
+    &__service{
+      .service-info{
+        font-size: 12px;
+        p{
+          color: #444;
+          &:first-child{
+            font-size: 13px;
+            font-family: rome;
+            color: $bg-main;
+          }
+          margin-bottom: 0.5em;
+
+        }
+      }
+    }
+  }
+  .footer-main{
+    margin-top: 15px;
+    .footer-policy{
+      padding: 10px;
+      position: relative;
+      @media only screen and (max-width:767px ) {
+        border-bottom:1px dashed #44444459;
+
+      }
+      i{
+        display: none;
+        @media only screen and (max-width:767px ) {
+          display: inline-block;
+          position: absolute;
+          right: 15px;
+          top: 20px;
+          color: $color-gray;
+        }
+      }
+      span{
+        &:hover{
+          color: $bg-main;
+        }
+        cursor: context-menu;
+        font-size: 14px;
+        font-family: rome;
+        color:black;
+      }
+      >ul{
+        @media only screen and (max-width:767px ) {
+          display: none;
+        }
+        padding-top: 10px;
+        padding-left: 0;
+        list-style-type: none;
+        li{
+          &:hover{
+            color: $bg-main;
+          }
+          a{
+            font-size: 13px;
+            color:$color-gray;
+            font-family: rome;
+            &:hover{
+              color:$bg-main;
+            }
+          }
+          padding: 5px 0;
+        }
+      }
+    }
+
+    .list-address{
+      cursor: context-menu;
+      padding-left: 0;
+      padding: 10px;
+      font-family: rome;
+      font-size: 14px;
+      padding-right: 0;
+
+      ul{
+        margin-top: 15px;
+        list-style-type: none;
+        font-size: 12px;
+        color:$color-gray;
+        padding-left: 0;
+        li{
+
+          img{
+            width: 49%;
+            max-width: 135px;
+            height: auto;
+          }
+
+        }
+      }
+    }
+  }
+  .footer-bot{
+    padding: 20px 0;
+    border-top: 1px solid #44444459;
+    border-bottom: 1px solid #44444459;
+    span{
+      font-family: rome;
+      font-size: 14px;
+      color:black;
+    }
+    #user-subcribe{
+      height: 38px;
+      .input-subcribe{
+        height: 38px;
+        width: calc(100% - 105px);
+        border-radius: 3px;
+        outline: none;
+        box-shadow: none;
+        border: 1px solid #44444459;
+        padding-left: 10px;
+        background-color:rgb(248, 248, 248);
+      }
+      button{
+        height: 38px;
+        outline: none;box-shadow: none;
+        margin-top: -3px;
+        padding:0 20px;
+        color: $color-white;
+        background-color: $bg-main;
+        border-radius: 3px;
+        border: 1px solid $bg-main;
+        &:hover{
+          background-color: $color-white;
+          color:$bg-main;
+        }
+      }
+    }
+    .social-footer{
+      .list-social{
+        list-style-type: none;
+        padding-left: 0;
+        $color-social :(#455b94,#38e0e2,#fc4b3e,#c69c6d,#eb3232);
+        @for $i from 1 through 5 {
+          li:nth-child(#{$i}){
+            display: inline-block;
+            margin-right: 5px;
+            a{
+              width: 33px;
+              height: 33px;
+              line-height: 33px;
+              display: inline-block;
+              color: white;
+              text-align: center;
+              border-radius:50%;
+              border: 1px solid nth($color-social, $i);
+              background-color: nth($color-social, $i);
+              transition:all 0.2s linear;
+              &:hover{
+                background-color: $color-white;
+                color:nth($color-social, $i);
+              }
+              i{
+
+                line-height: 33px;
+
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+  .footer-end{
+    strong{
+      color:$bg-main;
+
+    }
+    a{
+      text-decoration: underline;
+      color:$bg-main;
+      &:hover{
+        color:$bg-main;
+      }
+    }
+  }
+}
+.carousel-footer{
+  .owl-item{
+    @media only screen and (max-width: 767px) {
+      text-align: center;
+    }
+    img{
+      width: 57px;
+      margin: auto;
+    }
+  }
+}

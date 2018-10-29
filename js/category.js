@@ -39,36 +39,56 @@ $(function () {
     if (window.innerWidth <=991) {
        $(document).on("click",".product-filter__open",function () {
            $(this).css("display","none");
-           $(".product-filter").animate({right:0},500);
-            $(".product-filter__close").css("display","inline-block");
-       })
-        $(document).on("click",".product-filter__close",function () {
-            $(this).css("display","none");
-            $(".product-filter").animate({right:"-245px"},500);
+           $(".product-filter").animate({
+               right:0
+           },'fast','linear');
+           $(".product-filter__close").css("display","inline-block");
+       });
+        $(document).on("click", ".product-filter__close", function () {
+            $(this).css("display", "none");
+            $(".product-filter").animate({
+                right:"-245px"
+            },'fast','linear');
             $(".product-filter__open").css("display","inline-block");
         });
 
     }
+    let status  = 0;
     $(window).on("resize",function () {
-        if (window.innerWidth <=991) {
+        if (window.innerWidth <=991 && status === 0) {
             $(".product-filter__open").css("display", "inline-block");
-            $(".product-filter").animate({right: "-245px"});
-            $(document).on("click", ".product-filter__open", function () {
-                $(this).css("display", "none");
-                $(".product-filter").animate({right: 0}, 500);
-                $(".product-filter__close").css("display", "inline-block");
-                return false;
-            });
-            $(document).on("click", ".product-filter__close", function () {
-                $(this).css("display", "none");
-                $(".product-filter").animate({right: "-245px"}, 500);
-                $(".product-filter__open").css("display", "inline-block");
-                return false;
-            });
-        }else if(window.innerWidth >=992){
+            $(".product-filter").css({right:-245+'px'});
+
+        } else {
             $(".product-filter").css({right:0});
             $(".product-filter__open").css("display","none");
             $(".product-filter__close").css("display","none");
         }
-    })
+    });
+    $(document).on("click", ".product-filter__open", function () {
+        if(!status){
+            $(this).css("display", "none");
+            $(".product-filter").animate({
+                right: 0,
+            }, 'fast','linear');
+            $(".product-filter__close").css("display", "inline-block");
+            status = 1;
+            return false;
+        }else{
+            status = 0;
+        }
+    });
+    $(document).on("click", ".product-filter__close", function () {
+        if(status){
+            $(this).css("display", "none");
+            $(".product-filter").animate({
+                right: "-245px"
+            },'fast','linear');
+            $(".product-filter__open").css("display", "inline-block");
+            status = 0;
+            return false;
+        }else{
+            status = 1;
+        }
+    });
 });

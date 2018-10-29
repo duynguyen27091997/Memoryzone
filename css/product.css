@@ -1,0 +1,46 @@
+@font-face {
+  font-family: rore;
+  src: url("../fonts/Roboto-Regular.ttf"); }
+@font-face {
+  font-family: rome;
+  src: url("../fonts/Roboto-Medium.ttf"); }
+@font-face {
+  font-family: robo;
+  src: url("../fonts/Roboto-Bold.ttf"); }
+.bread-crumb {
+  border-bottom: 1px solid #44444440;
+  background-color: #ffffff;
+  margin-bottom: 40px; }
+  .bread-crumb .breadcrumb {
+    margin-bottom: 0;
+    background-color: #ffffff; }
+    .bread-crumb .breadcrumb .breadcrumb-item a {
+      color: #444; }
+    .bread-crumb .breadcrumb .active {
+      color: #008744; }
+    .bread-crumb .breadcrumb .breadcrumb-home {
+      text-decoration: none;
+      font-family: rome; }
+
+.product-show .ship-info {
+  border: 1px solid #008744;
+  border-radius: 3px;
+  padding: 7px; }
+  .product-show .ship-info__item {
+    background: left no-repeat;
+    padding: 10px 5px 10px 50px;
+    border-bottom: 1px solid #44444440; }
+    .product-show .ship-info__item:nth-child(1) {
+      background-image: url("../image/imgvova/shiper71e1.png"); }
+    .product-show .ship-info__item:nth-child(2) {
+      background-image: url("../image/imgvova/change71e1.png"); }
+    .product-show .ship-info__item:nth-child(3) {
+      background-image: url("../image/imgvova/pay71e1.png"); }
+    .product-show .ship-info__item:nth-child(4) {
+      background-image: url("../image/imgvova/phone71e1.png"); }
+    .product-show .ship-info__item h6 {
+      font-family: rome; }
+    .product-show .ship-info__item:last-child {
+      border-bottom: none; }
+
+/*# sourceMappingURL=product.css.map */

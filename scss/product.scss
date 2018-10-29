@@ -1,0 +1,49 @@
+@import "color";
+.bread-crumb{
+  border-bottom: 1px solid #44444440;
+  background-color: $color-white;
+  margin-bottom: 40px;
+  .breadcrumb{
+
+    margin-bottom: 0;
+
+    background-color: $color-white;
+    .breadcrumb-item{
+      a {
+        color: $color-gray;
+      }
+    }
+    .active{
+      color: $bg-main;
+    }
+    .breadcrumb-home{
+      text-decoration: none;
+      font-family: rome;
+    }
+  }
+
+}
+.product-show{
+  .ship-info{
+    border: 1px solid $bg-main;
+    border-radius: 3px;
+    padding: 7px;
+    &__item{
+      background: left no-repeat;
+      padding: 10px 5px 10px 50px;
+      $bg-img-ship: ("shiper71e1.png","change71e1.png","pay71e1.png","phone71e1.png");
+      @for $i from 1 through 4 {
+        &:nth-child(#{$i}){
+          background-image: url("../image/imgvova/" + nth($bg-img-ship,$i));
+        };
+      }
+      border-bottom: 1px solid #44444440;
+      h6{
+        font-family: rome;
+      }
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+  }
+}

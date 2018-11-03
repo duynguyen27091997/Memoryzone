@@ -41,19 +41,17 @@ input:focus{
     width: 1200px;
 }
 }
-
-
-
- a {
-     color: white;
-
-     &:hover {
-         text-decoration: none;
-     }
- }
-
-
-
+a:hover{
+  text-decoration: none;
+}
+*{
+  transition: all 200ms linear;
+}
+ul{
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 0;
+}
 .hot-deal {
   &__title {
     color: $color-gray;
@@ -383,8 +381,8 @@ input:focus{
  }
  .product-price {
      margin: 10px 5px 20px 0;
-
-
+      display: inline-flex;
+      align-items: baseline;
      .new-price {
          @extend .price;
          color: $bg-main;
@@ -398,7 +396,6 @@ input:focus{
          font-size: 13px;
          font-weight: normal;
          text-decoration: line-through;
-         display: none;
      }
 
 

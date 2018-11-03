@@ -33,6 +33,7 @@ footer .footer-main {
         footer .footer-main .footer-policy i {
           display: inline-block;
           position: absolute;
+          cursor: pointer;
           right: 15px;
           top: 20px;
           color: #444; } }

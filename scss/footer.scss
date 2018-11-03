@@ -33,6 +33,7 @@ footer{
         @media only screen and (max-width:767px ) {
           display: inline-block;
           position: absolute;
+          cursor: pointer;
           right: 15px;
           top: 20px;
           color: $color-gray;

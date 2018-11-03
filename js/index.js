@@ -6,7 +6,7 @@ $(function() {
     $(".opacity-fullscreen").click(function() {
         $(".side__bar").animate({ left: "-300px" }, 500);
         $(this).hide();
-    })
+    });
     if (window.innerWidth <= 991) {
         $(".drop-icon").switchClass("ti-angle-right", "ti-angle-down");
         $(".menu-toogle-text").click(function() {
@@ -21,8 +21,9 @@ $(function() {
             $(".drop-icon").switchClass("ti-angle-right", "ti-angle-down");
         } else {
             $(".drop-icon").switchClass("ti-angle-down", "ti-angle-right");
+
         }
-    })
+    });
     $(".ti-angle-down").on("click", function() {
         let pa = $(this).parent();
         let parent = pa.parent();

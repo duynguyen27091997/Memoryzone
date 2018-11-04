@@ -1,0 +1,63 @@
+@import "color";
+.customer{
+  margin-top: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $color-lightgray;
+  &__name{
+    &:after{
+      content: "!";
+      padding: 0 3px;
+    }
+  }
+  h6,h5{
+    font-family: rome;
+    text-transform: uppercase;
+  }
+  &__left-status{
+      .customer__name{
+        color: $bg-main;
+      }
+  }
+  &__right-info{
+  .customer__ul-info{
+
+
+    &__title{
+      padding-top: 10px;
+      i{
+        color: $bg-main;padding-right: 5px;
+      }
+    }
+  }
+  }
+  &__add-address{
+    margin-top: 20px;
+    background-color: $bg-main;
+    display: block;
+    padding: 8px 0;
+    text-align: center;
+    &:hover{
+      background-color: $color-white;
+      color: $bg-main;
+    }
+  }
+}
+.customer__tab-cart{
+  margin: 20px 0;
+  th , td{
+    border: 1px solid $color-lightgray;
+    padding: 5px 20px;
+    text-align: center;
+  }
+  th{
+    background-color: #4446;
+    border-right: 1px solid $color-white;
+    &:last-child{
+      border-right:1px solid $color-lightgray ;
+    }
+  }
+  .empty-tab{
+    padding: 20px 0 30px 0;
+  }
+
+}

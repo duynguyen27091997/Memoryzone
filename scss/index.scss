@@ -431,9 +431,23 @@ ul{
              margin-bottom: 30px;
              text-overflow:ellipsis;
              .product-img {
+               position: relative;
                  img {
 
                  }
+                &__flash-share{
+                  position: absolute;
+                  background-image: url("../image/imgvova/label_sale_50a71e1.png");
+                  height:35px;
+                  width: 44px;
+                  font-size: 12px;
+                  font-family: 'rome';
+                  line-height: 35px;
+                  text-align: center;
+                  color: $color-white;
+                  top: 0;
+                  left: 10px;
+                }
              }
 
              .product-info {

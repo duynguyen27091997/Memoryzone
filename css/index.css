@@ -1054,6 +1054,20 @@ ul {
   overflow: hidden;
   margin-bottom: 30px;
   text-overflow: ellipsis; }
+  .product-box .product-img, .product-box-w .product-img, .product-seen .owl-item .product-img {
+    position: relative; }
+    .product-box .product-img__flash-share, .product-box-w .product-img__flash-share, .product-seen .owl-item .product-img__flash-share {
+      position: absolute;
+      background-image: url("../image/imgvova/label_sale_50a71e1.png");
+      height: 35px;
+      width: 44px;
+      font-size: 12px;
+      font-family: 'rome';
+      line-height: 35px;
+      text-align: center;
+      color: #ffffff;
+      top: 0;
+      left: 10px; }
   .product-box .product-info, .product-box-w .product-info, .product-seen .owl-item .product-info {
     text-align: left;
     height: auto; }

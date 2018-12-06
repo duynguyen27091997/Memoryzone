@@ -111,7 +111,7 @@ $(document).ready(function() {
         var number = $(this).index();
         sync1.data('owl.carousel').to(number, 300, true);
     });
-    const bg_main = "#008744";
+    const bg_main = "#005bb2";
     const color_white ="#ffffff";
     $(".nav-detail__item").click(function (e) {
         $(e.currentTarget).css({

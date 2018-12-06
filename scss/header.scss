@@ -60,9 +60,7 @@ header {
         margin: 0;
         z-index: 1000;
         padding: 8px 10px;
-        border-radius: 0 0 3px 3px;
         box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.18);
-
         border-radius: 3px;
         display: none;
 
@@ -352,7 +350,7 @@ header {
   }
 
   .cart-infomation {
-    right: 15px;
+    right: 0;
     top: -113px;
     position: absolute;
     z-index: 6;
@@ -375,7 +373,7 @@ header {
 
   .menu-toogle {
     position: relative;
-    background-color: #ffba00;
+    background-color: #1c87e5;
 
     color: $color-white;
     height: 56px;
@@ -429,7 +427,6 @@ header {
         position: relative;
 
         .label-new {
-          position: relative;
           position: absolute;
           top: -8px;
           right: 10%;
@@ -456,11 +453,11 @@ header {
       }
 
       &:first-child>.nav-link {
-        color: #008744;
+        color: $bg-main;
       }
 
       &:hover .nav-link {
-        color: #008744;
+        color: $bg-main;
       }
 
       .nav-link {

@@ -271,3 +271,16 @@ $(function() {
     };
     $(".price").simpleMoneyFormat();
 });
+$('.carousel-slider').owlCarousel({
+    navText: ["<i class='ti-angle-left'></i>","<i class='ti-angle-right'></i>"],
+    responsiveClass:true,
+    dots:false,
+    loop:true,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:1
+
+        }
+    }
+});

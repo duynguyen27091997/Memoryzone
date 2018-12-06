@@ -378,7 +378,9 @@ header {
     color: $color-white;
     height: 56px;
     font-size: 1.15em;
-
+    &:hover{
+      background-color: $bg-main;
+    }
 
     @media only screen and (min-width: 992px) {
       &:hover {

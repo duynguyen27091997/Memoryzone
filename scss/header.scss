@@ -666,6 +666,12 @@ header {
     }
 
   }
+  &__none{
+    text-align: center;
+    color: #000;
+    font-size: 1rem;
+    padding: 25px 0;
+  }
 }
 .product-select {
   display: inline-block;

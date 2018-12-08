@@ -1,0 +1,124 @@
+@import "color";
+.bread-crumb{
+  padding: 5px 0;
+  border-bottom: 1px solid #44444440;
+  background-color: $color-white;
+  margin-bottom: 40px;
+  .breadcrumb{
+
+    margin-bottom: 0;
+
+    background-color: $color-white;
+    .breadcrumb-item{
+      a {
+        color: $color-gray;
+      }
+    }
+    .active{
+      color: $bg-main;
+    }
+    .breadcrumb-home{
+      text-decoration: none;
+      font-family: rome;
+    }
+  }
+
+}
+.search-title{
+  h6{
+    font-size: 1.5em;
+  }
+
+  #search-title__form {
+    position: relative;
+    overflow: auto;
+    width: 100%;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 2px;
+
+    @media only screen and (max-width: 991px) {
+      & {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__input {
+      height: 41px;
+      width: 80%;
+      color: $bg-main;
+      box-shadow: none;
+      padding: 10px 20px;
+      border: 1px solid ;
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        opacity: 0.6;
+      }
+
+    }
+    &__submit{
+      padding: 11px 27px;
+      border-radius: 2px;
+      border: none;
+      box-shadow: none;
+      background-color: $bg-main;
+      color: $color-white;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+      i {
+        font-size: 15px;
+      }
+
+    }
+  }
+}
+.search-footer{
+  &__pagination{
+    .pagination{
+      >.page-item{
+        margin: 0 3px;
+        color: $bg-main;
+        border: none;
+        border-radius: 3px;
+        &:hover{
+          outline: none;
+          box-shadow: none;
+          background-color: $bg-main;
+          color: $color-white;
+        }
+        a.page-link{
+          border-radius: 3px;
+          background-color:  #dee2e6;
+          color: $color-gray;
+          transition: all 200ms linear;
+          &:hover{
+            background-color: $bg-main;
+            border: 1px solid transparent;
+            color: $color-white;
+          }
+          &:focus{
+            outline: none;
+            box-shadow: none;
+          }
+        }
+
+      }
+      .active{
+
+        a.page-link {
+          background-color: $bg-main;
+          color: $color-white;
+          cursor:context-menu;
+          border: 1px solid transparent;
+        }
+      }
+    }
+  }
+}

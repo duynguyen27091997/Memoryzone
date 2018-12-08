@@ -433,7 +433,8 @@ ul{
              .product-img {
                position: relative;
                  img {
-
+                   display: block;
+                   width: 100%
                  }
                 &__flash-share{
                   position: absolute;
